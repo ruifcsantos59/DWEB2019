@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Italiana&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Italiana', serif;
+}
+
+h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+
+.home{
+  margin-top: 50px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slide {
+  display:none;
+}
+
+.comum {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
