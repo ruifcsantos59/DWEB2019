@@ -1,0 +1,7 @@
+Exercicio 6:
+
+a) //IDENTI[contains(../CONCEL, "Amares")]
+
+b) //CONCEL
+
+c) //ARQELEM/DESCRI[contains(../CONCEL, "Montalegre")]

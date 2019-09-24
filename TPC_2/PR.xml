@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "file:/Users/ruisantos/Documents/Mestrado/Universidade%20do%20Minho/1%C2%BA%20Ano/1%C2%BA%20Semestre/Desenvolvimento%20de%20Aplica%C3%A7%C3%B5es%20WEB/TPCs/TPC_2/PR.dtd">
+<project-record>
+    <header>
+        <key-name>TPC2_DAWEB_RuiSantos</key-name>
+        <title>TPC2</title>
+        <subtitle>Trabalhos de Casa nº2</subtitle>
+        <begin-date>24-09-2019</begin-date>
+        <end-date>24-09-2019</end-date>
+        <supervisor>José Carlos Ramalho</supervisor>
+    </header>
+    <work-team>
+        <member>
+            <name>Rui Santos</name>
+            <student-number>PG41850</student-number>
+            <email>ruifcsantos59@gmail.com</email>
+            <git>https://github.com/ruifcsantos59/DWEB2019</git>
+        </member>
+    </work-team>
+    <abstract>
+        <paragraphs>TPC2_1 Consistia em fazer PR utilizando um <italic>DTD</italic> para dar auxilio na entrega dos trabalhos de casa</paragraphs>
+        <paragraphs>Defini 1 project record que é composto por 4 partes, header (como informação sobre o trabalho de casa), work-team (como informação sobre o aluno), abstract (resumo do trabalho de casa e pequenas explicações como foi pensado), deliverables (link para o github) </paragraphs>
+        <paragraphs>TPC2_2 Consistia em fazer uns exercicios de xpath e fazer o dtd dos arqueossitios</paragraphs>
+    </abstract>
+    <deliverables>
+        <deliverable>TPC2_1
+            <linkTo to=""></linkTo>
+        </deliverable>
+        <deliverable>TPC2_2Ex6
+            <linkTo to=""></linkTo>
+        </deliverable>
+        <deliverable>TPC2_2Ex7
+            <linkTo to=""></linkTo>
+        </deliverable>
+    </deliverables>
+</project-record>

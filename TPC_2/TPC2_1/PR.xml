@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "file:/Users/ruisantos/Documents/Mestrado/Universidade%20do%20Minho/1%C2%BA%20Ano/1%C2%BA%20Semestre/Desenvolvimento%20de%20Aplica%C3%A7%C3%B5es%20WEB/TPCs/TPC_2/PR.dtd">
+<project-record>
+    <header>
+        <key-name></key-name>
+        <title></title>
+        <subtitle></subtitle>
+        <begin-date></begin-date>
+        <end-date></end-date>
+        <supervisor></supervisor>
+    </header>
+    <work-team>
+        <member>
+            <name></name>
+            <student-number></student-number>
+            <email></email>
+            <git></git>
+        </member>
+    </work-team>
+    <abstract>
+    </abstract>
+    <deliverables>
+        <deliverable>
+            <linkTo to=""></linkTo>
+        </deliverable>
+    </deliverables>
+</project-record>
