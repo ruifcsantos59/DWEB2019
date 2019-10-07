@@ -32,6 +32,8 @@
                     <hr/>
                     <h2>Abstract</h2>
                     <xsl:apply-templates mode="abstract"/>
+                    <h2>Deliverables</h2>
+                    <xsl:apply-templates mode="deliverables"/>
                 </body>
             </html>
         </xsl:result-document>
@@ -60,6 +62,10 @@
     
     <xsl:template match="pr" mode="abstract">
         <xsl:value-of select="/pr/abstract/p"/>
+    </xsl:template>
+    
+    <xsl:template match="pr" mode="deliverables">
+        <a href="{//@path}"><xsl:value-of select="/pr/deliverables/deliverable"/></a>
     </xsl:template>
     
 </xsl:stylesheet>

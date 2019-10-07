@@ -23,4 +23,7 @@
         <p>Para além disso ainda:</p>
         <p>Arquiositios.xsl e respetivas páginas HTML</p>
     </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/ruifcsantos59/DWEB2019/tree/master/TPC_3">Link Github</deliverable>
+    </deliverables>
 </pr>
