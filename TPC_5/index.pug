@@ -1,0 +1,25 @@
+extends layout
+block content
+  .w3-container
+    .w3-card-4
+      header.w3-container.w3-teal
+        h3 Trabalho de casa nº5
+      .w3-container
+        table.w3-table-all
+          tr
+            th Data
+            th Item
+          each al in lista
+            tr
+              td= al.data
+              td= al.item
+        form.w3-container(action='/' method='POST')
+          label.w3-teal
+            b Data
+          input.w3-input.w3-border.w3-light-grey(type='text' name='data')
+          label.w3-teal
+            b Item
+          input.w3-input.w3-border.w3-light-grey(type='text' name='item')
+          input.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+      footer.w3-container.w3-teal
+        address Trabalho de casa nº5
