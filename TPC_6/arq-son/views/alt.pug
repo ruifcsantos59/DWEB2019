@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Arquivo Sonoro de Ernesto Veiga de Oliveira
+        h2 Adicionar novo Arquivo Sonoro
+        form.w3-container(action='/alt' method='POST')
+            each arq in lista
+                label
+                    b Província
+                input.w3-input.w3-border(type='text' name='prov' value= arq.prov)
+                br
+                label
+                    b Local
+                input.w3-input.w3-border(type='text' name='local' value= arq.local)
+                br
+                label
+                    b Titulo
+                input.w3-input.w3-border(type='text' name='tit' value= arq.tit readonly)
+                br
+                label
+                    b Musico
+                input.w3-input.w3-border(type='text' name='musico' value= arq.musico)
+                br
+                label
+                    b Tipo de Ficheiro
+                input.w3-input.w3-border(type='text' name='t' value= arq.file.t)
+                br
+                label
+                    b Texto do Ficheiro
+                input.w3-input.w3-border(type='text' name='text' value= arq.file.text)
+                br
+                label
+                    b Duração
+                input.w3-input.w3-border(type='text' name='duracao' value= arq.duracao)
+                br
+                input.w3-btn.w3-blue-grey(type='submit' value='Editar')
+        footer
+            p  

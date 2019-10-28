@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Arquivo Sonoro de Ernesto Veiga de Oliveira
+    h3 Listagem completa
+    .w3-container
+      table.w3-table.w3-striped.w3-bordered
+        tr
+          th Província
+          th Titulo
+          th Músico
+        each arq in lista
+          tr
+            td= arq.prov
+            td= arq.tit
+            if arq.musico
+              if arq.musico == '[object Object]'
+                td= arq.musico.text
+              else
+                td= arq.musico
+            else
+              td Sem músico
+            td 
+              button.w3-button(onclick="detalhe('" + arq.tit +"')")
+                i.fa.fa-arrow-right(style={color: 'black'})
+            td
+              button.w3-button(onclick="editar('" + arq.tit + "')")
+                i.fa.fa-edit(style={color: '#4682B4'})
+            td
+              button.w3-button(onclick="apagaItem('" + arq.tit + "')") 
+                i.fa.fa-times(style={color: 'red'})
+      footer
+        p 

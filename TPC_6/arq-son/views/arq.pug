@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Arquivo Sonoro de Ernesto Veiga de Oliveira
+    h3 Detalhe
+    .w3-container
+      table.w3-table.w3-striped.w3-bordered
+        tr
+          th Província
+          th Titulo
+          th Músico
+          th Tipo de Ficheiro
+          th Nome do Ficheiro
+          th Duração
+        each arq in lista
+          tr
+            td= arq.prov
+            td= arq.tit
+            if arq.musico
+              if arq.musico == '[object Object]'
+                td= arq.musico.text
+              else
+                td= arq.musico
+            else
+              td Sem músico
+            td= arq.file.t
+            td= arq.file.text
+            td= arq.duracao
+      footer
+        p
