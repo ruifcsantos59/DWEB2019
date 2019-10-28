@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/Users/ruisantos/Documents/Mestrado/Universidade%20do%20Minho/1%C2%BA%20Ano/1%C2%BA%20Semestre/Desenvolvimento%20de%20Aplica%C3%A7%C3%B5es%20WEB/TPCs/TPC_3/pr.dtd">
+<pr>
+    <metadata>
+        <keyname>PG41850</keyname>
+        <title>Trabalho para casa nº6</title>
+        <subtitle>TPC nº6</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+        <bdate>22/10/2019</bdate>
+        <edate>28/10/2019</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>PG41850</identifier>
+            <name>Rui Santos</name>
+            <email>ruifcsantos59@gmail.com</email>
+            <git>https://github.com/ruifcsantos59</git>
+        </worker>
+    </workteam>
+    <abstract>
+        <p>Trabalho para casa numero 6</p>
+        <p>Desenvovlimento de um servidor para fazer um CRUD dos Arquivos Sonoros</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/ruifcsantos59/DWEB2019/tree/master/TPC_6">Link Github</deliverable>
+    </deliverables>
+</pr>
