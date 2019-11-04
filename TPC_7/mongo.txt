@@ -1,0 +1,5 @@
+db.filmes.aggregate([ {$group: {_id: "$genres", numFilmes: {$sum: 1}}}])
+
+db.filmes.find({genres: /Drama/}, {title: true})
+
+db.filmes.aggregate({$unwind: "$genres"}, {$unwind: "$cast"}, {$match: {genres: "Comedy"}}, {$group: {_id: "$cast"}})

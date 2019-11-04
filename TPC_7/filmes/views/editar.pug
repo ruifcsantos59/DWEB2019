@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Filmes
+        h2 Editar Filme
+        p Para adicionar vários Atores ou vários Generos, separar por virgulas 
+        form.w3-container(action='/filmes/edit/' method='POST')
+            label
+                b id
+            input.w3-input.w3-border(type='hidden' name='_id' value= lista._id)   
+            label
+                b Titulo
+            input.w3-input.w3-border(type='text' name='title' value= lista.title)
+            br
+            label
+                b Ano
+            input.w3-input.w3-border(type='text' name='year' value= lista.year)
+            br
+            label
+                b Atores
+            input.w3-input.w3-border(type='text' name='cast' value= lista.cast)
+            br
+            label
+                b Géneros
+            input.w3-input.w3-border(type='text' name='genres' value= lista.genres)
+            br
+            input.w3-btn.w3-blue-grey(type='submit' value='Editar')
+        footer
+            p  

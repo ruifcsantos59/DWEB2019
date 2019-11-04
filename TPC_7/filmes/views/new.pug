@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    .w3-container
+        h1 Filmes
+        h2 Adicionar novo Filme
+        p Para adicionar vários Atores ou vários Generos, separar por virgulas 
+        form.w3-container(action='/filmes/' method='POST')
+            label
+                b Titulo
+            input.w3-input.w3-border(type='text' name='title')
+            br
+            label
+                b Ano
+            input.w3-input.w3-border(type='text' name='year')
+            br
+            label
+                b Atores
+            input.w3-input.w3-border(type='text' name='cast')
+            br
+            label
+                b Géneros
+            input.w3-input.w3-border(type='text' name='genres')
+            br
+            input.w3-btn.w3-blue-grey(type='submit' value='Novo')
+        footer
+            p  

@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Filmes
+    h3 Listagem
+    .w3-container
+      table.w3-table.w3-striped.w3-bordered
+        tr
+          th Titulo
+          th Ano
+        each filmes in lista
+          tr
+            td= filmes.title
+            td= filmes.year
+            td 
+              button.w3-button(onclick="detalhe('" + filmes._id +"')")
+                i.fa.fa-arrow-right(style={color: 'black'})
+            td
+              button.w3-button(onclick="editar('" + filmes._id + "')")
+                i.fa.fa-edit(style={color: '#4682B4'})
+            td
+              button.w3-button(onclick="apagaItem('" + filmes._id + "')") 
+                i.fa.fa-times(style={color: 'red'})
+      footer
+        p

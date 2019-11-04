@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Filmes
+    h3 Detalhes do filme #{lista.title}
+    .w3-container
+      h3 Titulo
+      p= lista.title
+      h3 Ano
+      p= lista.year
+      h3 Atores
+      ul
+        each cast in lista.cast
+            li= cast
+      h3 Géneros
+      ul
+        each genres in lista.genres
+            li= genres
+      footer
+        p
