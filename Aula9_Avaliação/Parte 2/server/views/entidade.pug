@@ -1,0 +1,53 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Entidades
+    h3 Detalhe de uma entidade
+    .w3-container
+      h3 Estado
+      p= entidade.estado
+      h3 Sigla
+      p= entidade.sigla
+      h3 SIOE
+      p= entidade.sioe
+      h3 Designação
+      p= entidade.designacao
+      h3 Internacional
+      p= entidade.internacional
+    .w3-container
+      h1 Tipologias
+      table.w3-table-all 
+        tr
+          th Sigla
+          th Designação
+          th ID
+          each tip in tipologia
+            tr
+              td= tip.sigla
+              td= tip.designacao
+              td= tip.id
+    .w3-container
+      h1 Dono
+      table.w3-table-all 
+        tr
+          th Codigo
+          th Título
+          each d in dono
+            tr
+              td= d.codigo
+              td= d.titulo
+    .w3-container
+      h1 Participante
+      table.w3-table-all 
+        tr
+          th Tipo Participante
+          th Código
+          th Título
+          each p in participante
+            tr
+              td= p.tipoPar
+              td= p.codigo
+              td= p.titulo
+    adress
+        a(href='/') Voltar 

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .w3-container
+    h1 Entidades
+    h3 Lista de Entidades
+    .w3-container
+      table.w3-table.w3-striped.w3-bordered
+        tr
+          th Sigla
+          th Estado
+          th Identificador
+          th Designação
+        each entidade in lista
+          tr
+            td= entidade.sigla
+            td= entidade.estado
+            td= entidade.id
+            td= entidade.designacao
+            td
+              a(href='/'+entidade.id) Ver mais 
+      footer
+        p
