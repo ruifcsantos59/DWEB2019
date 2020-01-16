@@ -19,9 +19,16 @@
         </worker>
     </workteam>
     <abstract>
-        <p></p>
+        <p>Pasta API é referente ao primeiro exercicio</p>
+        <p>Pasta Front end é referente ao segundo exercicio</p>
+        <p>No exercicio 1 foi utilizado um conversor online de xml para json, após isso os compos do json que tinham "-" antes do nome foram removidos. </p>
+        <p>Após isso foi usado o comando mongoimport com o ficheiro json</p>
+        <p>No código no ficheiro app.js foi feita a conexão ao mongo através da biblioteca mongoose</p>
+        <p>Foi criado um schema na pasta models</p>
+        <p>As duas ultimas chamadas não consegui fazer pelo facto do json não estar bem estruturado e ter complicado a query (instrumentos{instrumento: [{cada objeto do array}]})</p>
+        <p>Para o segundo exercicio é possivel consultar as respostas às perguntas no ficheiro respostas.txt </p>
     </abstract>
     <deliverables>
-        <deliverable path="">Link Github</deliverable>
+        <deliverable path="https://github.com/ruifcsantos59/DWEB2019/tree/master/TESTE">Link Github</deliverable>
     </deliverables>
 </pr>
