@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <metadata>
+        <keyname>Teste</keyname>
+        <title>Teste de Desenvolvimento de Aplicações WEB</title>
+        <subtitle>Teste de DWEB</subtitle>
+        <supervisor homepage="http://www.di.uminho.pt/~jcr">
+            José Carlos Ramalho
+        </supervisor>
+        <bdate>16/01/2020</bdate>
+        <edate>16/01/2020</edate>
+    </metadata>
+    <workteam>
+        <worker>
+            <identifier>pg41850</identifier>
+            <name>Rui Santos</name>
+            <email>pg41850@alunos.uminho.pt</email>
+        </worker>
+    </workteam>
+    <abstract>
+        <p></p>
+    </abstract>
+    <deliverables>
+        <deliverable path="">Link Github</deliverable>
+    </deliverables>
+</pr>

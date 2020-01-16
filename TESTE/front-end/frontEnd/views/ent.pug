@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  .w3-container
+    h3 Informação da Entidade
+      .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Estado
+            th Sigla
+            th SIOE
+            th Designacao
+            th Internacional
+          tr
+            td= ent.estado
+            td= ent.sigla
+            td= ent.sioe
+            td= ent.designacao
+            td= ent.internacional
+    h3 Lista de Tipologias a que pertence
+        .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Sigla
+            th Designacao
+            th ID
+          each tip in tips
+            tr
+              td= tip.sigla
+              td= tip.designacao
+              td= tip.id
+              td 
+                a(href='/tipologia/' + tip.id) Ver mais sobre a tipologia
+    h3 Lista de Processos em que é dona
+        .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Código
+            th Titulo
+          each d in dono
+            tr
+              td= d.codigo
+              td= d.titulo
+              td 
+                a(href='http://clav-api.dglab.gov.pt/api/classes/c'+ d.codigo +'?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ') Ver processo
+    h3 Lista de Processos em que participa
+        .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Tipo de Participação
+            th Titulo
+            th Código
+          each p in part
+            tr
+              td= p.tipoPar
+              td= p.titulo
+              td= p.codigo
+              td 
+                a(href='http://clav-api.dglab.gov.pt/api/classes/c'+ p.codigo +'?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ') Ver processo
+    footer
+        a(href='/') Voltar ao menu principal
+              
+              

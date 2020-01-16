@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .w3-container
+    h3 Detalhes da tipologia
+      .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Estado
+            th Sigla
+            th Designacao
+          tr
+            td= tip.estado
+            td= tip.sigla
+            td= tip.designacao
+
+    footer
+        a(href='/') Voltar ao menu principal

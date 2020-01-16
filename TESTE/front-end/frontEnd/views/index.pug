@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .w3-container
+    h1 CLAV Teste de Desenvolvimento de Aplicações WEB 2020
+    h3 Lista de Entidades
+      .w3-container
+        table.w3-table.w3-striped.w3-bordered
+          tr
+            th Sigla
+            th Designacao
+          each ent in lista
+            tr
+              td= ent.sigla
+              td= ent.designacao
+              td 
+                a(href='/' + ent.id) Ver mais
+              
